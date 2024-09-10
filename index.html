@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<title>Kvadratické rovnice</title>
+	<link rel="stylesheet" href="styly.css">
+</head>
+<body>
+	<div id="all">
+	<div id="page">
+		<div id="switch" onclick="doswitch()"></div>
+	<h1>Kvadratické rovnice</h1>
+	<div id="equation">
+		<input class="inputvar" autocomplete="off" id="coefa" placeholder="a" oninput="resizeme(this)">x<sup>2</sup> + <input autocomplete="off" class="inputvar" id="coefb" placeholder="b" oninput="resizeme(this)">x + <input autocomplete="off" class="inputvar" id="coefc" placeholder="c" oninput="resizeme(this)"> = 0
+	</div>
+	<div id="solution">
+		<h2>Výsledek: </h2><big id="result"></big><br>
+		<h2>1) Zapsání informací</h2><br>
+		<p id="step1"></p>
+		<h2>2) Vyjádření D</h2><br>
+		<p id="step2"></p>
+		<h2>3) Vypočítání kořenů</h2><br>
+		<p id="step3"></p>
+		<h2>4) Grafické znázornění</h2><br>
+		<p id="step4"></p>
+		<span id="footnote">by Franatrtur 2021<br>parabola plotting: <a href="https://github.com/r3s/jquery-quadratic-plot" target="_blank">Rahul ES</a></span>
+	</div>
+	</div>
+	</div>
+	<script src="plot.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
